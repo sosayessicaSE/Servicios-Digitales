@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="shortcut icon" href="imagenes\logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Venus - Servicios digitales</title>
+    <link rel="stylesheet" type="text/css" href="inicio.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="inicio.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="imagenes\logo.png" alt="Venus" id="logo" width="220px" height="auto">
+        <nav>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="inicio">
+      <div class="videos-container">
+        <div class="video-container"  class="aprendizcontenedor" data-url="#aprendiz">
+          <video class="video" src="videos\estudiantes.mp4" autoplay loop muted poster="imagenes\estudiantes.png"" onclick="irAPagina('#aprendiz')"></video>
+          <img src="imagenes\estudiantes.png" alt="Imagen 1" width="150" height="100" class="video-poster" onerror="this.style.display='block'; this.previousSibling.style.display='none'">
+          <a href="#aprendiz" class="visually-hidden" aria-label="Ir a Aprendiz"></a>
+          <div class="video-title">
+            <h3 id="aprendizid" class="title-link">Aprendíz</h3>
+          </div>
+        </div>
+        
+        <div class="video-container" class="asesoriacontenedor" data-url="#asesoria">
+          <video class="video" src="videos\diana.mp4" autoplay loop muted poster="imagenes\diana.png" onclick="irAPagina('#asesoria')"></video>
+          <img src="imagenes\diana.png" alt="Imagen 2" width="150" height="100" class="video-poster" onerror="this.style.display='block'; this.previousSibling.style.display='none'">
+          <a href="#asesoria" class="visually-hidden" aria-label="Ir a Asesoria"></a>
+          <div class="video-title" >
+            <h3 id="asesoriaid" class="title-link">Asesoría</h3>
+          </div>
+        </div>
+
+        <div class="video-container" class="empresacontenedor" data-url="#empresa">
+          <video class="video" src="videos\empresas.mp4" autoplay loop muted poster="imagenes\empresas2.png" onclick="irAPagina('#empresa')"></video>
+          <img src="imagenes\empresas2.png" alt="Imagen 3" width="150" height="100" class="video-poster" onerror="this.style.display='block'; this.previousSibling.style.display='none'">
+          <a href="#empresa" class="visually-hidden" aria-label="Ir a Empresa"></a>
+          <div class="video-title">
+    <h3 id="empresaid" class="title-link">Empresa</h3>
+          </div>
+        </div>
+</div>
+</section>
+
+<section id="servicios">
+  <img src="imagenes/fondoservicios.png" alt="" id="fondoservicios" width="90%" height="90%">
+  <div class="containerservicios">
+    <div class="row">
+            <h3 id="texto1" >Nuestros servicios</h3>
+            <p id="texto2" >Solicita una página web para tu negocio. Conecta con tus clientes, establece presencia en línea y genera ventas. </p>
+            <h3 id="texto3" >Desarrollo web</h3>
+            <p id="texto4" >Aprende a programar desde cero con nuestras clases particulares personalizadas. 
+              Diseñamos un sistema único para cada estudiante, brindando una experiencia excepcional.</p>
+            <h3 id="texto5">Capacitación</h3>
+            <p id="texto6">Nos enfocamos en comprender tus objetivos y requisitos específicos, 
+              para crear una solución personalizada que se adapte a tus necesidades.</p>
+            <h3 id="texto7">Proyectos a medida</h3>
+    </div>
+  </div>
+
+</section>
+
+<section id="contacto">
+
+<p>En Venus, creemos que cada cliente es único. Es por eso que nos dedicamos a brindar servicios personalizados y 100% adecuados a tus gustos y necesidades.</p>
+<p>Nuestro objetivo es garantizar tu completa satisfacción con el resultado final, por lo que trabajamos en conjunto durante todo el proceso.</p>
+<p>Para hacer esto posible, ofrecemos reuniones en línea para debatir las ideas a llevar a cabo, logrando una comunicación fluida entre nuestro equipo y el cliente.</p>
+<p>Desde el diseño hasta la implementación, nos aseguramos de que estés involucrado/a en el proceso.</p>  
+<p>Nos enorgullece ofrecer productos de alta calidad, con atención al detalle y cuidado en cada etapa.</p>
+  <br>
+<p>¡Contáctanos! Estamos ansiosos por trabajar contigo y crear algo increíble juntos.</p>
+  
+<div class="contact-logos">
+  <figure>
+    <a href="https://wa.me/59892380175">
+    <img src="imagenes/whatsapp.png" alt="Whatsapp">
+  </a>
+  </figure>
+
+  <figure>
+    <a href="mailto:serviciosdigitalesvenus@gmail.com">
+    <img src="imagenes/mail.png" alt="Mail">
+  </a>
+  </figure>
+
+  <figure>
+    <a href="https://www.instagram.com/digitalesvenus/">
+    <img src="imagenes/instagram.png" alt="Instagram">
+  </a>
+  </figure>
+
+  <figure>
+    <a href="https://www.facebook.com/profile.php?id=100091661321878">
+    <img src="imagenes/facebook.png" alt="Facebook">
+  </a>
+  </figure>
+</div>
+
+
+</section>
+
+<section id="aprendiz" class="seccion">
+  <div class="containeraprendiz">
+    <div class="row">
+        <h2>Para principiantes</h2>
+        <p id="infoaprendiz">En nuestro centro de formación ofrecemos clases particulares personalizadas para principiantes, con el objetivo de proporcionar una experiencia excepcional en el comienzo de tu carrera tecnológica.</p>
+        <ul class="aprendizul">
+          <li>Aprende a programar desde cero</li>
+          <li>Clases personalizadas según tus necesidades</li>
+          <li>Horarios flexibles para adaptarse a tu agenda</li>
+        </ul>
+        <img src="imagenes\codigo.png" alt="Imagen 1" width="438" height="250" class="aprendizimg">
+        
+        <div class="contact-logos2">
+          <figure>
+            <a href="https://wa.me/59892380175">
+            <img src="imagenes/whatsapp.png" alt="Whatsapp">
+          </a>
+          </figure>
+        
+          <figure>
+            <a href="mailto:serviciosdigitalesvenus@gmail.com">
+            <img src="imagenes/mail.png" alt="Mail">
+          </a>
+          </figure>
+        
+          <figure>
+            <a href="https://www.instagram.com/digitalesvenus/">
+            <img src="imagenes/instagram.png" alt="Instagram">
+          </a>
+          </figure>
+        
+          <figure>
+            <a href="https://www.facebook.com/profile.php?id=100091661321878">
+            <img src="imagenes/facebook.png" alt="Facebook">
+          </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section id="asesoria" class="seccion">
+  <div class="containerasesoria">
+    <div class="row">
+        <h2>Asistencia especializada</h2>
+        <p id="infoasesoria">En nuestro servicio de asesoramiento, te ofrecemos la ayuda y guía necesarias para alcanzar el éxito en tu negocio o proyecto en línea. Nuestros expertos te brindarán un asesoramiento personalizado y adaptado a tus necesidades, con el objetivo de maximizar tu potencial y alcanzar tus objetivos.</p>
+        <ul class="asesoriaul">
+          <li>Asesoramiento especializado en diferentes áreas de la tecnología</li>
+          <li>Asistencia personalizada y adaptada a tus necesidades</li>
+          <li>Realización, diseño y gestión de proyectos</li>
+          <li>Horarios flexibles y convenientes</li>
+        </ul>
+        <img src="imagenes\asesoria.png" alt="Imagen 1" width="438" height="250" class="asesoriaimg">
+        
+        <div class="contact-logos3">
+          <figure>
+            <a href="https://wa.me/59892380175">
+            <img src="imagenes/whatsapp.png" alt="Whatsapp">
+          </a>
+          </figure>
+        
+          <figure>
+            <a href="mailto:serviciosdigitalesvenus@gmail.com">
+            <img src="imagenes/mail.png" alt="Mail">
+          </a>
+          </figure>
+        
+          <figure>
+            <a href="https://www.instagram.com/digitalesvenus/">
+            <img src="imagenes/instagram.png" alt="Instagram">
+          </a>
+          </figure>
+        
+          <figure>
+            <a href="https://www.facebook.com/profile.php?id=100091661321878">
+            <img src="imagenes/facebook.png" alt="Facebook">
+          </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+<section id="empresa" class="seccion">
+  <div class="containerempresa">
+    <div class="row">
+        <h2 id="empresash">Servicio web para empresas</h2>
+        <p id="infoempresa">En nuestro servicio web dirigido a empresas, ofrecemos el diseño e implementación de una página web única en cada marca. Nuestro equipo te brindará un servicio personalizado y adaptado a tus necesidades empresariales, con el objetivo de maximizar tu potencial y alcanzar tus objetivos.</p>
+        <ul class="empresaul">
+          <li>Desarrollo web</li>
+          <li>Asistencia personalizada y adaptada a tu empresa</li>
+          <li>Realización, diseño y gestión de proyectos web</li>
+          <li>Horarios flexibles y convenientes para tu empresa</li>
+        </ul>
+        <img src="imagenes\empresa.png" alt="Imagen 1" width="438" height="250" class="empresaimg">
+        
+        <div class="contact-logos4">
+          <figure>
+            <a href="https://wa.me/59892380175">
+            <img src="imagenes/whatsapp.png" alt="Whatsapp">
+          </a>
+          </figure>
+        
+          <figure>
+            <a href="mailto:serviciosdigitalesvenus@gmail.com">
+            <img src="imagenes/mail.png" alt="Mail">
+          </a>
+          </figure>
+        
+          <figure>
+            <a href="https://www.instagram.com/digitalesvenus/">
+            <img src="imagenes/instagram.png" alt="Instagram">
+          </a>
+          </figure>
+        
+          <figure>
+            <a href="https://www.facebook.com/profile.php?id=100091661321878">
+            <img src="imagenes/facebook.png" alt="Facebook">
+          </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+</section>
+    </main>
+  </body>
+</html>
